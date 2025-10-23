@@ -355,19 +355,30 @@ body {
     overflow: hidden;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+/* Profile card wrapper */
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-image {
-    height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
+/* Circular profile photo area */
+.hero .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background: none; /* remove grayish overlay */
+}
+
+/* The actual image itself */
+.hero .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-content {
